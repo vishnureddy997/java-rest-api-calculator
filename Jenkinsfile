@@ -29,6 +29,8 @@ pipeline {
             post {
                 success {
                     archiveArtifacts 'target/*.jar'
+                    sh 'aws --version'
+                    // bat 'aws --version'
                 }
             }
         }
