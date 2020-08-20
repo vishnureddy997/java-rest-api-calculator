@@ -38,6 +38,8 @@ pipeline {
                     // bat 'aws --version'
                     sh 'aws iam get-user'
                     // bat 'aws iam get-user'
+                    sh 'aws configure set region us-east-1'
+                    sh 'aws s3 cp ./target/calculator-0.0.1-SNAPSHOT.jar s3://valentin-calculator-api-jars/calculator.jar'
                 }
             }
         }
