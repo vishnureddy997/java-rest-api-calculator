@@ -1,6 +1,7 @@
 package com.coralogix.calculator.services;
 
-import ...
+import import com.coralogix.calculator.model.Result;
+import org.springframework.stereotype.Service;
 
 @Service
 public class AddService {
